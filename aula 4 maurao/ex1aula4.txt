@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+void main() {
+    
+    float valorcompra;
+    printf("infiorme o valor da sua compra: ");
+    scanf("%f", &valorcompra);
+   if (valorcompra > 50.00) {
+    printf("parabéns, você recebeu um brinde!");
+   }
+   
+  
+}

@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void main() {
+   int horas;
+   int minutos;
+   int total;
+   int diferença;
+   
+   printf("digite as horas trabalhadas:");
+   scanf("%d", &horas);
+   printf("digite os minutos trabalhados:");
+   scanf("%d", &minutos);
+   
+   int totalminutos = (horas*60) + minutos;
+    
+    if (totalminutos > 480 ){
+        diferença = totalminutos - 480;
+        
+        printf("horas adicionadas %d e %d minutos", diferença/60, diferença % 60);
+    }
+    else if (totalminutos <480 ) {
+        diferença = 480 - totalminutos;
+        
+        printf("você retirou %d horas e %d minutos", diferença/60, diferença % 60);
+        
+    }
+}

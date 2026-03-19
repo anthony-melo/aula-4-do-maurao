@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void main() {
+    int x
+    =printf("selecione uma das opções a seguir:\n");
+    printf("(casal - 1, familia c/ criança - 2, casal s/ criança - 3)");
+    scanf("%d", &x);
+    
+    switch(x){
+        case 1:
+        printf("indicar area romantica");
+        break;
+        case 2:
+        printf("indicar area familiar premium");
+        break;
+        case 3:
+        printf("indicar area familiar comum");
+    }
+    
+   
+}
